@@ -181,7 +181,7 @@
         async function fetchProductsFromGoogleSheets() {
             try {
                 // Your published Google Sheets CSV URL
-                const sheetUrl = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTLYnKCDV3OtDHDVR3GYuKcalnyh0DNjuurOYGa5N_RtdBCp8om-mmjqyEP5HPYd7gknlBJuNyce-QA/pub?gid=0&single=true&output=csv';
+                const sheetUrl = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRFSBdfwj1yPXJZq5A6QoFU1Zh1uTzff6DuKXCyxrnSIDJwI_JIMtmMcFwipVaO_BKobCobkS-_nvag/pub?gid=0&single=true&output=csv';
                 
                 const response = await fetch(sheetUrl);
                 const csvData = await response.text();
