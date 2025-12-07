@@ -1,5 +1,5 @@
  // Configuration
-        const CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQFPGN_GxgdaFjyK1GqC4x-w7p4wD5rYNgVoQ_qni83JRm63PytaBhVZXvz95aZeWycwrZ_Hv1uGWaI/pub?gid=0&single=true&output=csv';
+        const CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQUcQ6YgTSk_09Skk_5ggNglMpjx9yroR-L1AGSnH-04D4qlOoEf7Ywda5xHO4SEjtGUV0EXGfZ-QnO/pub?gid=0&single=true&output=csv';
         const WHATSAPP_NUMBER = '+8801673064324';
         const STORAGE_KEY = 'nutsSpicesSelections';
         
