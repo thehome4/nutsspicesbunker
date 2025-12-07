@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutsSpicesBunker | Premium Food Products</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Raleway:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="logo" onclick="location.reload()">Nuts<span class="ampersand">&</span>SpicesBunker</div>
+        
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search for nuts and spices...">
+            <button id="search-btn"><i class="fas fa-search"></i></button>
+            <button class="filter-btn" id="filter-modal-btn"><i class="fas fa-filter"></i> Filter</button>
+        </div>
+        
+        <div class="contact-icons">
+            <a href="https://wa.me/8801673064324" target="_blank" title="WhatsApp" style="text-decoration: none;">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="https://www.facebook.com/share/1BUGiM4S7k/" target="_blank" title="Facebook" style="text-decoration: none;">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <div class="product-count">Products: <span id="product-count">0</span></div>
+        </div>
+    </div>
+    <div>
+        <a href="review.html" class="review-btn" title="Reviews" style="text-decoration: none; background-color: #5a2e0c; padding-left: 5rem">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> Customer Reviews
+        </a>
+    </div>
+
+    <!-- Customize Nut Box Button -->
+    <div class="custom-box-container">
+        <button class="custom-box-btn" onclick="window.location.href='index2.html'">
+            <i class="fas fa-box-open"></i> Customize Your Nut Box
+        </button>
+    </div>
+    
+    <!-- Discount Banner -->
+    <div class="discount-banner">
+        <div class="discount-text" id="discount-text">Loading best offers...</div>
+    </div>
+    
+    <!-- Products Container -->
+    <div class="products-container">
+        <h2 class="section-title">Premium Nuts & Spices Collection</h2>
+        <div class="products-grid" id="products-grid">
+            <div class="spinner" id="loading-spinner"></div>
+        </div>
+    </div>
+    
+    <!-- Product Detail Modal -->
+    <div class="modal" id="product-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Product Details</h2>
+                <span class="close-modal" id="close-modal">&times;</span>
+            </div>
+            <div class="modal-body" id="modal-body">
+                <!-- Product details will be loaded here -->
+            </div>
+        </div>
+    </div>
+    
+    <!-- Filter Modal -->
+    <div class="filter-modal" id="filter-modal">
+        <div class="filter-content">
+            <h2>Filter Products</h2>
+            <div class="price-range">
+                <h3>Price Range (per kg)</h3>
+                <div style="display: flex; justify-content: space-between; margin-top: 1rem;">
+                    <div>
+                        <label for="min-price">Min Price (BDT)</label>
+                        <input type="number" id="min-price" min="0" placeholder="0" style="width: 100%; padding: 0.5rem; margin-top: 0.5rem;">
+                    </div>
+                    <div>
+                        <label for="max-price">Max Price (BDT)</label>
+                        <input type="number" id="max-price" min="0" placeholder="10000" style="width: 100%; padding: 0.5rem; margin-top: 0.5rem;">
+                    </div>
+                </div>
+            </div>
+            <div class="filter-buttons">
+                <button class="reset-filter" id="reset-filter">Reset</button>
+                <button class="apply-filter" id="apply-filter">Apply Filters</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+        <script src="app.js"></script>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/8801673064324?text=Hi%20I%20am%20interested%20in%20your%20products" 
+       class="whatsapp-float" 
+       target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+</body>
+</html>
+
+    </body>
+    </html>

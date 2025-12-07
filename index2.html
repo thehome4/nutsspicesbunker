@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuts & Spices - Premium Nuts Customizer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-pepper-hot"></i>
+                <h1><a href="index.html" style="color: white; text-decoration: none;">Nuts<span class="ampersand">&</span>SpicesBunker</a></h1>
+            </div>
+            <p class="tagline">Customize your premium nuts selection, adjust quantities, and order fresh!</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Search Bar -->
+        <div class="search-container">
+            <div class="search-bar">
+                <i class="fas fa-search"></i>
+                <input type="text" id="searchInput" placeholder="Search nuts by name...">
+            </div>
+        </div>
+
+        <div class="controls">
+            <div class="storage-info">
+                <i class="fas fa-save"></i>
+                <span>Your selections are automatically saved</span>
+            </div>
+            <button class="reset-btn" id="resetBtn">
+                <i class="fas fa-redo"></i>
+                Reset All
+            </button>
+        </div>
+
+        <div class="products-grid" id="productsContainer">
+            <div class="loading">
+                <i class="fas fa-spinner fa-spin"></i>
+                <p>Loading premium nuts from our collection...</p>
+            </div>
+        </div>
+
+        <div class="summary-card">
+            <div class="summary-header">
+                <h2>Order Summary</h2>
+                <div class="total-price">
+                    <span id="totalAmount">0</span>
+                    <span class="currency"> BDT</span>
+                </div>
+            </div>
+            
+            <div class="selected-items" id="selectedItems">
+                <div class="empty-state" style="padding: 10px; font-size: 0.9rem;">
+                    <i class="fas fa-shopping-basket"></i>
+                    <p>No items selected yet. Use the + buttons to add nuts to your order.</p>
+                </div>
+            </div>
+            
+            <button class="whatsapp-btn" id="whatsappBtn">
+                <i class="fab fa-whatsapp"></i>
+                Send Order via WhatsApp
+            </button>
+        </div>
+    </div>
+
+    <footer class="container">
+        <p>Nuts & Spices &copy; 2025 | Premium Nuts<span class="ampersand">&</span>SpicesBunker Customizer</p>
+</footer>
+
+    <script src="app2.js"></script>
+</body>
+</html>
